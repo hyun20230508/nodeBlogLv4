@@ -1,0 +1,30 @@
+{
+  "name": "node_blog",
+  "version": "1.0.0",
+  "description": "node blog api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyun20230508/node_blog_api.git"
+  },
+  "author": "Nam Hyun Jin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyun20230508/node_blog_api/issues"
+  },
+  "homepage": "https://github.com/hyun20230508/node_blog_api#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.4",
+    "mysql2": "^3.4.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  }
+}
