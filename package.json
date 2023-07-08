@@ -1,21 +1,21 @@
 {
-  "name": "node_blog",
+  "name": "node_blog4",
   "version": "1.0.0",
-  "description": "node blog api",
+  "description": "nodeBlogLv4",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hyun20230508/node_blog_api.git"
+    "url": "git+https://github.com/hyun20230508/nodeBlogLv4"
   },
   "author": "Nam Hyun Jin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hyun20230508/node_blog_api/issues"
+    "url": "https://github.com/hyun20230508/nodeBlogLv4/issues"
   },
-  "homepage": "https://github.com/hyun20230508/node_blog_api#readme",
+  "homepage": "https://github.com/hyun20230508/nodeBlogLv4#readme",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
