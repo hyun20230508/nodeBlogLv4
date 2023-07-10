@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const { Users } = require('../models');
 
 module.exports = async (req, res, next) => {
   if (!req.cookies) {
@@ -19,7 +20,14 @@ module.exports = async (req, res, next) => {
   try {
     const decodedToken = jwt.verify(authToken, 'skey');
     const userId = decodedToken.userId;
-    res.locals.user = userId;
+
+    const user = await Users.findOne({ where: { userId } });
+    if (!user) {
+      return res
+        .status(401)
+        .json({ errorMessage: '토큰에 해당하는 사용자가 존재하지 않습니다.' });
+    }
+    res.locals.user = user;
     next();
   } catch (error) {
     console.error(error);
